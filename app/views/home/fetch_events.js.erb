@@ -1,0 +1,5 @@
+<% if @events && !@events.empty? %>
+	$('#result').html("<%= escape_javascript(render(:partial => 'events', :locals => { :events => @events })) %>")
+<% else %>
+	$('#result').html("No Event Found!")
+<% end %>
