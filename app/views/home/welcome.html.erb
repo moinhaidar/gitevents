@@ -1,0 +1,11 @@
+<div id="name" style='text-align:center;margin-top:5px;'>
+  Welcome
+</div><div id="name">
+  <%= form_tag '/home/fetch_events', :remote => 'true' do %>
+	<%= text_field_tag :github_id %>
+	<br />
+	<%= submit_tag 'Fetch' %>
+  <% end %>
+</div>
+<div id="result" style='display:none'>
+</div>
